@@ -1,0 +1,27 @@
+{
+  "name": "Thai Keyboard - 4 line",
+  "description": "Use for type thai language , source from Gaia demo keyboard",
+  "type": "privileged",
+  "role": "input",
+  "launch_path": "/settings.html",
+  "developer": {
+    "name": "Pakkapon Phongthawee",
+    "url": "https://github.com/pureexe"
+  },
+  "permissions": {
+    "input": {
+      "description": "To send key events"
+    }
+  },
+ "icons": {
+    "128": "/style/images/keyboard-128.png"
+  },
+  "inputs": {
+    "english": {
+      "launch_path": "/index.html#en",
+      "name": "ไทย - ๔ แถว",
+      "description": "ไทย - ๔ แถว",
+      "types": ["text", "url", "email"]
+    }
+  }
+}
