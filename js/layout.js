@@ -153,7 +153,6 @@ KeyboardLayout.prototype.forEachPageView = function forEachPageView(f) {
 KeyboardLayout.predefinedPages = {
   NUMBERS: {
     layout: [
-      '๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙ ๐',
       '1 2 3 4 5 6 7 8 9 0',
       '@ # $ % & * - + ( )',
       'ALT ! " \' : ; / ? BACKSPACE',
@@ -170,7 +169,6 @@ KeyboardLayout.predefinedPages = {
   },
   SYMBOLS: {
     layout: [
-      '๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙ ๐',
       '` ~ _ ^ ± | [ ] { }',
       '° ² ³ © ® § < > « »',
       'ALT ¥ € £ $ ¢ \\ = BACKSPACE',

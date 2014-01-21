@@ -15,7 +15,8 @@ function Key(keyname, pagekeys, layoutkeys) {
   // Make sure that all key objects have name, keycap and keycmd properties.
   this.name = keyname;
   if (!this.keycap)
-    this.keycap = keyname;
+
+		this.keycap = keyname;
   if (!this.keycmd)
     this.keycmd = 'sendkey';
 

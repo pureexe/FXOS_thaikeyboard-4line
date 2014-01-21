@@ -1,12 +1,13 @@
 {
-  "name": "Thai Keyboard - 4 line",
-  "description": "Use for type thai language , source from Gaia demo keyboard",
+  "name": "Thai keyboard - 4 line",
+  "version": "1.01",
+  "description": "Use for type thai language",
   "type": "privileged",
   "role": "input",
   "launch_path": "/settings.html",
   "developer": {
     "name": "Pakkapon Phongthawee",
-    "url": "https://github.com/pureexe"
+    "url": "https://github.com/pureexe/"
   },
   "permissions": {
     "input": {

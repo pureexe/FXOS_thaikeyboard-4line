@@ -50,7 +50,7 @@ body {
  * Instead, we do it with a text transform.
  */
 .page.shifted {
-  text-transform: capitalize;
+/*  text-transform: capitalize; */
 }
 
 /*

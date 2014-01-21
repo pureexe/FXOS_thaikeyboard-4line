@@ -269,14 +269,26 @@
     if (locked) {
       this.element.classList.add('shifted');
       this.element.classList.add('locked');
+	var keydisplay = document.getElementsByClassName("key");
+	for (var i = 0; i < 48; i++) {
+    		keydisplay[i].innerHTML =  keydisplay[i].innerHTML.toUpperCase();
+	}
     }
     else if (shifted) {
       this.element.classList.add('shifted');
       this.element.classList.remove('locked');
+ 	var keydisplay = document.getElementsByClassName("key");
+	for (var i = 0; i < 48; i++) {
+    		keydisplay[i].innerHTML =  keydisplay[i].innerHTML.toUpperCase();
+	}
     }
     else {
       this.element.classList.remove('shifted');
       this.element.classList.remove('locked');
+	var keydisplay = document.getElementsByClassName("key");
+	for (var i = 0; i < 48 /*keydisplay.length*/; i++) {		
+    		keydisplay[i].innerHTML =  keydisplay[i].innerHTML.toLowerCase();
+	}
     }
   };
 

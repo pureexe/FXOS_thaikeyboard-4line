@@ -10,9 +10,7 @@ var mainpageName;
 
 var pages = {};
 var pageviews = {};
-
 window.addEventListener('load', init);
-
 function init() {
   keyboardContainer = document.getElementById('keyboardContainer');
 
@@ -160,55 +158,30 @@ function resizeWindow() {
 }
 
 var englishLayout = {
-  name: 'thai',
-  label: 'ไทย - ๔ แถว',
+  name: 'ไทย',
+  label: 'ไทย',
   pages: {
     main: {
       layout: [
         'ๅ / - ภ ถ ุ ึ ค ต จ ข ช',
         'ๆ ไ ำ พ ะ ั ี ร น ย บ ล ',
 	'ฟ ห ก ด เ ้ ่ า ส ว ง ฃ',
-        'ALTS ผ ป แ อ ิ ื ท ม ใ ฝ BACKSPACE',
-        '?123 SWITCH SPACE . RETURN'
+        'SHIFT ผ ป แ อ ิ ื ท ม ใ ฝ BACKSPACE',
+        '?123 SWITCH SPACE a RETURN'
       ],
       variants: {
         email: [
-	 'ๅ / - ภ ถ ุ ึ ค ต จ ข ช',
+        'ๅ / - ภ ถ ุ ึ ค ต จ ข ช',
         'ๆ ไ ำ พ ะ ั ี ร น ย บ ล ',
 	'ฟ ห ก ด เ ้ ่ า ส ว ง .',
-        'ALTS ผ ป แ อ ิ ื ท ม ใ ฝ BACKSPACE',
+        'SHIFT ผ ป แ อ ิ ื ท ม ใ ฝ BACKSPACE',
         '?123 SWITCH SPACE . RETURN'
         ],
         url: [
-	 'ๅ / - ภ ถ ุ ึ ค ต จ ข ช',
+        'ๅ / - ภ ถ ุ ึ ค ต จ ข ช',
         'ๆ ไ ำ พ ะ ั ี ร น ย บ ล ',
 	'ฟ ห ก ด เ ้ ่ า ส ว ง ฃ',
-        'ALTS ผ ป แ อ ิ ื ท ม ใ ฝ BACKSPACE',
-        '?123 SWITCH SPACE . RETURN'
-        ]
-      }
-    },
-main_shift: {
-      layout: [
-        '+ ๑ ๒ ๓ ๔ ู ฿ ๕ ๖ ๗ ๘ ๙',
-        '๐ \" ฎ ฑ ธ ํ ๊ ณ ฯ ญ ฐ ,',
-        'ฤ ฆ ฏ โ ฌ ็ ๋ ษ ศ ซ . ฅ',
-        'ALTU ( ) ฉ ฮ ฺ ์ ? ฒ ฬ ฦ BACKSPACE',
-        '?123 SWITCH SPACE . RETURN'
-      ],
-      variants: {
-        email: [
-        '+ ๑ ๒ ๓ ๔ ู ฿ ๕ ๖ ๗ ๘ ๙',
-        '๐ \" ฎ ฑ ธ ํ ๊ ณ ฯ ญ ฐ ,',
-        'ฤ ฆ ฏ โ ฌ ็ ๋ ษ ศ ซ . ฅ',
-        'ALTU ( ) ฉ ฮ ฺ ์ ? ฒ ฬ ฦ BACKSPACE',
-        '?123 SWITCH SPACE . RETURN'
-        ],
-        url: [
-        '+ ๑ ๒ ๓ ๔ ู ฿ ๕ ๖ ๗ ๘ ๙',
-        '๐ \" ฎ ฑ ธ ํ ๊ ณ ฯ ญ ฐ ,',
-        'ฤ ฆ ฏ โ ฌ ็ ๋ ษ ศ ซ . ฅ',
-        'ALTU ( ) ฉ ฮ ฺ ์ ? ฒ ฬ ฦ BACKSPACE',
+        'SHIFT ผ ป แ อ ิ ื ท ม ใ ฝ BACKSPACE',
         '?123 SWITCH SPACE . RETURN'
         ]
       }
@@ -220,19 +193,16 @@ main_shift: {
   keys: {
     '.': {
       alternatives: ', ? ! ; :'
-	    },
-  
-  ALTS: {
-        keycmd: 'page',
-	keycap: '⇪',
-        page: 'main_shift',
-        size: 1,
-        classes: ['specialkey']
-      },
-ALTU: {
-	keycap: '⇪',
-	keycmd: 'defaultPage',
-	size: 1,
-   	classes: ['specialkey']      }
+    },
+    q: { alternatives: '1' },
+    w: { alternatives: '2' },
+    e: { alternatives: '3 é è' },
+    r: { alternatives: '4' },
+    t: { alternatives: '5' },
+    y: { alternatives: '6' },
+    u: { alternatives: '7' },
+    i: { alternatives: '8' },
+    o: { alternatives: '9' },
+    p: { alternatives: '0' }
   }
 };

@@ -59,7 +59,8 @@
     // single use. So be careful when making this configurable.
     var newvalue = InputField.atSentenceStart();
     if (newvalue !== currentPageView.shifted) {
-      currentPageView.setShiftState(newvalue, false);
+      // currentPageView.setShiftState(newvalue, false);
+	currentPageView.setShiftState(false, false); // disable BIG first charater, it not avaliable in thai
     }
   }
 }(window));
