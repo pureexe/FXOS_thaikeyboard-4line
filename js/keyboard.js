@@ -167,7 +167,7 @@ var englishLayout = {
         'ๆ ไ ำ พ ะ ั ี ร น ย บ ล ',
 	'ฟ ห ก ด เ ้ ่ า ส ว ง ฃ',
         'SHIFT ผ ป แ อ ิ ื ท ม ใ ฝ BACKSPACE',
-        '?123 SWITCH SPACE a RETURN'
+        '?123 SWITCH SPACE . RETURN'
       ],
       variants: {
         email: [
@@ -193,16 +193,6 @@ var englishLayout = {
   keys: {
     '.': {
       alternatives: ', ? ! ; :'
-    },
-    q: { alternatives: '1' },
-    w: { alternatives: '2' },
-    e: { alternatives: '3 é è' },
-    r: { alternatives: '4' },
-    t: { alternatives: '5' },
-    y: { alternatives: '6' },
-    u: { alternatives: '7' },
-    i: { alternatives: '8' },
-    o: { alternatives: '9' },
-    p: { alternatives: '0' }
+    }
   }
 };
