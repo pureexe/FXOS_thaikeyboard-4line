@@ -1,6 +1,6 @@
 {
   "name": "Thai keyboard - 4 line",
-  "version": "1.01",
+  "version": "1.03",
   "description": "Use for type thai language",
   "type": "privileged",
   "role": "input",
@@ -18,8 +18,8 @@
     "128": "/style/images/keyboard-128.png"
   },
   "inputs": {
-    "english": {
-      "launch_path": "/index.html#en",
+    "thai": {
+      "launch_path": "/index.html#th",
       "name": "ไทย - ๔ แถว",
       "description": "ไทย - ๔ แถว",
       "types": ["text", "url", "email"]
