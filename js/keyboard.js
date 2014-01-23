@@ -14,7 +14,7 @@ window.addEventListener('load', init);
 function init() {
   keyboardContainer = document.getElementById('keyboardContainer');
 
-  layout = new KeyboardLayout(thaiLayout);
+  layout = new KeyboardLayout(englishLayout);
 
   // Start off with the main page
   variant = getVariant();
@@ -157,7 +157,7 @@ function resizeWindow() {
   });
 }
 
-var thaiLayout = {
+var englishLayout = {
   name: 'ไทย',
   label: 'ไทย',
   pages: {

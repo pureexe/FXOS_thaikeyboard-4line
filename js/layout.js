@@ -216,7 +216,7 @@ KeyboardLayout.predefinedKeys = {
     classes: ['symbolfont', 'specialkey'],
     omitkeyrole: true  // Don't use role=key for this
   },
-AB
+
   SHIFT: {
     keycmd: 'shift',
     keycap: '⇪',
@@ -230,8 +230,9 @@ AB
     size: 1.5,
     classes: ['specialkey']
   },
-  'กขค': {
+  'ABC': {
     keycmd: 'defaultPage',
+    keycap: 'กขค',
     size: 1.5,
     classes: ['specialkey']
   },

@@ -18,8 +18,8 @@
     "128": "/style/images/keyboard-128.png"
   },
   "inputs": {
-    "thai": {
-      "launch_path": "/index.html#th",
+    "english": {
+      "launch_path": "/index.html#en",
       "name": "ไทย - ๔ แถว",
       "description": "ไทย - ๔ แถว",
       "types": ["text", "url", "email"]
