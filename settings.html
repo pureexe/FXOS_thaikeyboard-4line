@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
   <meta charset="utf-8">
-  <title>Thai 4 Line KeyBoard</title>
+  <title>Keyboard Settings</title>
+  <link rel="stylesheet" type="text/css" href="style/buildblock/headers.css"/>
+  <link rel="stylesheet" type="text/css" href="style/buildblock/switches.css"/>
+  <link rel="stylesheet" type="text/css" href="style/buildblock/lists.css"/>
+  <link rel="stylesheet" type="text/css" href="style/settings.css"/>
+  <script defer src="js/settings.js"></script>
 </head>
-<body>
-    <h1>แป้นพิมพ์ไทย 4 บรรทัด</h1>
+<body class="skin-organic">
+  <section role="region">
+    <header>
+      <a id="back" href="#"><span class="icon icon-back">back</span></a>
+      <h1>ตั้งค่าแป้นพิมพ์ไทย ๔ แถว</h1>
+    </header>
+    <div>
+      <section data-type="list" id="general-settings">
+        <ul>
+          <li data-setting="keyboard.vibration">
+            <aside class="pack-end">
+              <label class="pack-checkbox">
+                <input type="checkbox" id="cb-vibration">
+                <span></span>
+              </label>
+            </aside>
+            <p><label for="cb-vibration">สั่น</label></p>
+          </li>
 
-
-จัดทำโดย Pakkapon Phongthawee
-<br>
-ซอร์สโค้ด / ติดต่อ เชิญได้ที่ <a href="https://www.github.com/pureexe"> github.com/pureexe </a>
-<br>
-พัฒนาต่อยอดจาก <a href="https://github.com/mozilla-b2g/gaia/tree/master/test_apps/demo-keyboard">demo-keyboard</a> และ <a herf="https://github.com/narze/lne">Lne</a>
+          <li data-setting="keyboard.clicksound">
+            <aside class="pack-end">
+              <label class="pack-checkbox">
+                <input type="checkbox" id="cb-clickSound">
+                <span></span>
+              </label>
+            </aside>
+            <p><label for="cb-clickSound">เสียงแตะ</label></p>
+          </li>
+	<header>พัฒนาโดย</header>
+	<li>
+            <aside class="pack-end">
+              <img alt="photo" src="style/images/devpic.jpg">
+            </aside>
+            <a href="#">
+              <p>Pakkapon Phongthawee</p>
+              <p>https://github.com/pureexe</p>
+            </a>
+          </li>
+         </ul>
+      </section>
+    </div>
+  </section>
 </body>
 </html>
-
-

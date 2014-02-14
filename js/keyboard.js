@@ -96,6 +96,18 @@ function handleKey(e) {
 
   switch (key.keycmd) {
   case 'sendkey':
+    if(localStorage.vibration==1){
+      try{	
+      window.navigator.vibrate(50);
+	}
+	catch(e){};
+    }
+    if(localStorage.clickSound==1){
+	try{
+      new Audio('./style/sounds/key.opus').cloneNode(false).play();
+      new Audio('./style/sounds/special.opus').cloneNode(false).play();}
+	catch(e){};
+    }
     if (currentPageView.shifted) {
       sendKey(String.fromCharCode(key.keycode).toUpperCase().charCodeAt(0));
     }
