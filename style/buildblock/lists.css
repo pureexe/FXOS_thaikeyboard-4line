@@ -122,14 +122,22 @@ li a:active {
   overflow: hidden;
 }
 
+[data-type="list"] aside span[data-type=img],
 [data-type="list"] aside img {
   display: block;
   overflow: hidden;
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 0.1rem #dedede;
   background: transparent center center / cover;
   position: relative;
   z-index: 1;
+
+  /* Favor performance over quality */
+  image-rendering: -moz-crisp-edges;
 }
 
 /* Text content */

@@ -5,7 +5,7 @@
   // It must match the CSS file, which makes it brittle
   // XXX: get rid of it somehow
   const MARGIN = 2;
-
+  const TOTALKEY = 48; // total of key on keyboard to avoid bug of shitfed
   // Look up the HTML templates we'll use for building the keyboard page
   var templates = {
     page: document.getElementById('keyboard-page-template'),
@@ -48,8 +48,10 @@
 
         // We set the keycap as a data attribute so that we can use
         // it with content: attr(data-keycap) in the stylesheet
-        keyelt.dataset.keycap = keyobj.keycap;
-
+	
+	/// THAI Language shift compatible by check if       	
+	keyelt.dataset.keycap = keyobj.keycap;
+	
         // If the key has associated classses, set them.
         if (keyobj.classes) {
           keyobj.classes.forEach(function(c) { keyelt.classList.add(c); });
@@ -270,24 +272,27 @@
       this.element.classList.add('shifted');
       this.element.classList.add('locked');
 	var keydisplay = document.getElementsByClassName("key");
-	for (var i = 0; i < 48; i++) {
+	for (var i = 0; i < TOTALKEY; i++) {
     		keydisplay[i].innerHTML =  keydisplay[i].innerHTML.toUpperCase();
+		keydisplay[i].dataset.keycap = keydisplay[i].innerHTML.toUpperCase();
 	}
     }
     else if (shifted) {
       this.element.classList.add('shifted');
       this.element.classList.remove('locked');
  	var keydisplay = document.getElementsByClassName("key");
-	for (var i = 0; i < 48; i++) {
+	for (var i = 0; i < TOTALKEY; i++) {
     		keydisplay[i].innerHTML =  keydisplay[i].innerHTML.toUpperCase();
+		keydisplay[i].dataset.keycap = keydisplay[i].innerHTML.toUpperCase();
 	}
     }
     else {
       this.element.classList.remove('shifted');
       this.element.classList.remove('locked');
 	var keydisplay = document.getElementsByClassName("key");
-	for (var i = 0; i < 48 /*keydisplay.length*/; i++) {		
+	for (var i = 0; i < TOTALKEY /*keydisplay.length*/; i++) {		
     		keydisplay[i].innerHTML =  keydisplay[i].innerHTML.toLowerCase();
+		keydisplay[i].dataset.keycap = keydisplay[i].innerHTML.toLowerCase();
 	}
     }
   };
